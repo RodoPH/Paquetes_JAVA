@@ -1,7 +1,6 @@
 package principal;
 
 import javax.swing.JOptionPane;
-import java.util.ArrayList;
 import articulo.Articulos;
 
 import operaciones.Operaciones;
@@ -9,8 +8,6 @@ import operaciones.Operaciones;
 public class Principal {
 
 	public static void main(String[] args) {
-		
-		ArrayList<Articulos> nuevoProducto = new ArrayList<Articulos>();
 		
 		String respuesta;
 		Operaciones objOpera = new Operaciones();
@@ -22,7 +19,7 @@ public class Principal {
 		do{
 		try{
 			
-		respuesta = (String) JOptionPane.showInputDialog(null,"¿qué poducto es su compra? ","BIENVENIDO",JOptionPane.QUESTION_MESSAGE,null,producto,producto[0]);
+		respuesta = (String) JOptionPane.showInputDialog(null,"Â¿quÃ© poducto es su compra? ","BIENVENIDO",JOptionPane.QUESTION_MESSAGE,null,producto,producto[0]);
 			
 		if(respuesta.equals(producto[1])){
 			
